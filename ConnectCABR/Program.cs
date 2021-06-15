@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -52,6 +52,7 @@ namespace ConnectCABR
                         catch (Exception)
                         {
                         }
+                        var result = MessageBox.Show("Sou um aplicativo desenvolvido pelo Kayze da World Anti Cheat\nEspero ter boa serventia a você, qualquer problema que encontre reporte por gentileza!\nContato: support@anticheats.com.br", "Sobre mim", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
                         mutex.ReleaseMutex();
                         Application.EnableVisualStyles();
                         Application.SetCompatibleTextRenderingDefault(false);
